@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Inherited Icy Parent POM -->
+    <parent>
+        <groupId>org.bioimageanalysis.icy</groupId>
+        <artifactId>parent-pom-plugin</artifactId>
+        <version>1.0.3</version>
+    </parent>
+
+    <!-- Project Information -->
+    <artifactId>orthoviewer</artifactId>
+    <version>2.0.8</version>
+
+    <packaging>jar</packaging>
+
+    <name>3D OrthoViewer</name>
+    <description>View 3D data in three orientations simultaneously (XY, YZ, XZ) </description>
+    <url>http://icy.bioimageanalysis.org/plugin/3d-orthoviewer/</url>
+    <inceptionYear>2020</inceptionYear>
+
+    <organization>
+        <name>Institut Pasteur</name>
+        <url>https://pasteur.fr</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>GNU GPLv3</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.en.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>sdallongeville</id>
+            <name>Stéphane Dallongeville</name>
+            <url>https://research.pasteur.fr/fr/member/stephane-dallongeville/</url>
+            <roles>
+                <role>founder</role>
+                <role>lead</role>
+                <role>architect</role>
+                <role>developer</role>
+                <role>debugger</role>
+                <role>tester</role>
+                <role>maintainer</role>
+                <role>support</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <!-- Project properties -->
+    <properties>
+
+    </properties>
+
+    <!-- Project build configuration -->
+    <build>
+
+    </build>
+
+    <!-- List of project's dependencies -->
+    <dependencies>
+        <!-- The core of Icy -->
+        <dependency>
+            <groupId>org.bioimageanalysis.icy</groupId>
+            <artifactId>icy-kernel</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bioimageanalysis.icy</groupId>
+            <artifactId>sequence-blocks</artifactId>
+            <version>2.0.16</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- Icy Maven repository (to find parent POM) -->
+    <repositories>
+        <repository>
+            <id>icy</id>
+            <name>Icy's Nexus</name>
+            <url>https://icy-nexus.pasteur.fr/repository/Icy/</url>
+        </repository>
+    </repositories>
+</project>
