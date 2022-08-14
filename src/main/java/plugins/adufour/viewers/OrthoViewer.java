@@ -566,7 +566,14 @@ public class OrthoViewer extends Plugin implements PluginCanvas
                     
                     final IcyBufferedImage img = getCurrentImage(currentDimension);
                     
-                    if (img != null) imageCache = IcyBufferedImageUtil.getARGBImage(img, getLut(), imageCache);
+                    if (img != null) {
+                        try {
+                            imageCache = IcyBufferedImageUtil.getARGBImage(img, getLut(), imageCache);
+                        }
+                        catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
                     else imageCache = null;
                     
                     // repaint now
