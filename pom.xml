@@ -8,14 +8,12 @@
     <parent>
 		<artifactId>pom-icy</artifactId>
         <groupId>org.bioimageanalysis.icy</groupId>
-        <version>2.0.0</version>
+        <version>3.0.0-a.1</version>
 	</parent>
 
     <!-- Project Information -->
     <artifactId>orthoviewer</artifactId>
-    <version>2.0.8</version>
-
-    <packaging>jar</packaging>
+    <version>3.0.0-a.1</version>
 
     <name>3D OrthoViewer</name>
     <description>View 3D data in three orientations simultaneously (XY, YZ, XZ) </description>
@@ -53,42 +51,15 @@
         </developer>
     </developers>
 
-    <!-- Project properties -->
-    <properties>
-
-    </properties>
-
-    <profiles>
-        <profile>
-            <id>icy-plugin</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-    </profiles>
-
     <!-- List of project's dependencies -->
     <dependencies>
-        <!-- The core of Icy -->
-        <dependency>
-            <groupId>org.bioimageanalysis.icy</groupId>
-            <artifactId>icy-kernel</artifactId>
-			<version>${icy-kernel.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.bioimageanalysis.icy</groupId>
-            <artifactId>sequence-blocks</artifactId>
-			<version>${sequence-blocks.version}</version>
-        </dependency>
     </dependencies>
 
     <!-- Icy Maven repository (to find parent POM) -->
     <repositories>
         <repository>
             <id>icy</id>
-            <name>Icy's Nexus</name>
-            <url>https://icy-nexus.pasteur.fr/repository/Icy/</url>
+            <url>https://nexus-icy.pasteur.cloud/repository/icy/</url>
         </repository>
     </repositories>
 </project>
