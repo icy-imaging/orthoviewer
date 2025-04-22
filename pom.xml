@@ -8,16 +8,16 @@
     <parent>
 		<artifactId>pom-icy</artifactId>
         <groupId>org.bioimageanalysis.icy</groupId>
-        <version>3.0.0-a.1</version>
+        <version>3.0.0-a.4</version>
 	</parent>
 
     <!-- Project Information -->
     <artifactId>orthoviewer</artifactId>
-    <version>3.0.0-a.1</version>
+    <version>3.0.0-a.2</version>
 
     <name>3D OrthoViewer</name>
     <description>View 3D data in three orientations simultaneously (XY, YZ, XZ) </description>
-    <url>http://icy.bioimageanalysis.org/plugin/3d-orthoviewer/</url>
+    <url>https://icy.bioimageanalysis.org/plugin/3d-orthoviewer/</url>
     <inceptionYear>2020</inceptionYear>
 
     <organization>
@@ -50,16 +50,4 @@
             </roles>
         </developer>
     </developers>
-
-    <!-- List of project's dependencies -->
-    <dependencies>
-    </dependencies>
-
-    <!-- Icy Maven repository (to find parent POM) -->
-    <repositories>
-        <repository>
-            <id>icy</id>
-            <url>https://nexus-icy.pasteur.cloud/repository/icy/</url>
-        </repository>
-    </repositories>
 </project>

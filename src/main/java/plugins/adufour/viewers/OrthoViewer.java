@@ -52,7 +52,7 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 @IcyPluginName("Ortho Viewer")
-@IcyPluginIcon(path = "/orthoviewer.png")
+@IcyPluginIcon(path = "/plugins/adufour/viewers/orthoviewer.png")
 public class OrthoViewer extends Plugin implements PluginCanvas<OrthoViewer.OrthoCanvas> {
     @Override
     public String getCanvasClassName() {
