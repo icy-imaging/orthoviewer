@@ -18,26 +18,25 @@
 
 package plugins.adufour.viewers;
 
-import org.bioimageanalysis.icy.common.geom.point.Point5D;
-import org.bioimageanalysis.icy.extension.plugin.abstract_.Plugin;
-import org.bioimageanalysis.icy.extension.plugin.annotation_.IcyPluginIcon;
-import org.bioimageanalysis.icy.extension.plugin.annotation_.IcyPluginName;
-import org.bioimageanalysis.icy.extension.plugin.interface_.PluginCanvas;
-import org.bioimageanalysis.icy.gui.GraphicsUtil;
-import org.bioimageanalysis.icy.gui.canvas.IcyCanvas2D;
-import org.bioimageanalysis.icy.gui.canvas.IcyCanvasEvent;
-import org.bioimageanalysis.icy.gui.canvas.Layer;
-import org.bioimageanalysis.icy.gui.component.slider.IcySlider;
-import org.bioimageanalysis.icy.gui.viewer.Viewer;
-import org.bioimageanalysis.icy.model.image.IcyBufferedImage;
-import org.bioimageanalysis.icy.model.image.IcyBufferedImageUtil;
-import org.bioimageanalysis.icy.model.roi.ROI;
-import org.bioimageanalysis.icy.model.roi.ROI2D;
-import org.bioimageanalysis.icy.model.sequence.DimensionId;
-import org.bioimageanalysis.icy.model.sequence.Sequence;
-import org.bioimageanalysis.icy.system.preferences.CanvasPreferences;
-import org.bioimageanalysis.icy.system.thread.SingleProcessor;
-import org.bioimageanalysis.icy.system.thread.ThreadUtil;
+import fr.icy.common.geom.point.Point5D;
+import fr.icy.extension.plugin.abstract_.Plugin;
+import fr.icy.extension.plugin.annotation_.IcyPluginName;
+import fr.icy.extension.plugin.interface_.PluginCanvas;
+import fr.icy.gui.GraphicsUtil;
+import fr.icy.gui.canvas.IcyCanvas2D;
+import fr.icy.gui.canvas.IcyCanvasEvent;
+import fr.icy.gui.canvas.Layer;
+import fr.icy.gui.component.slider.IcySlider;
+import fr.icy.gui.viewer.Viewer;
+import fr.icy.model.image.IcyBufferedImage;
+import fr.icy.model.image.IcyBufferedImageUtil;
+import fr.icy.model.roi.ROI;
+import fr.icy.model.roi.ROI2D;
+import fr.icy.model.sequence.DimensionId;
+import fr.icy.model.sequence.Sequence;
+import fr.icy.system.preferences.CanvasPreferences;
+import fr.icy.system.thread.SingleProcessor;
+import fr.icy.system.thread.ThreadUtil;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
@@ -52,7 +51,6 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 @IcyPluginName("Ortho Viewer")
-@IcyPluginIcon(path = "/plugins/adufour/viewers/orthoviewer.png")
 public class OrthoViewer extends Plugin implements PluginCanvas<OrthoViewer.OrthoCanvas> {
     @Override
     public String getCanvasClassName() {
