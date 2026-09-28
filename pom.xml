@@ -7,17 +7,17 @@
     <parent>
         <groupId>fr.icy</groupId>
 		<artifactId>pom-icy</artifactId>
-        <version>3.0.0-a.7</version>
+        <version>3.0.0-a.8-SNAPSHOT</version>
 	</parent>
 
-    <groupId>fr.icy.extensions</groupId>
+    <groupId>fr.icy.extension</groupId>
     <artifactId>orthoviewer</artifactId>
-    <version>3.0.0-a.7</version>
+    <version>3.0.0-a.8-SNAPSHOT</version>
 
     <name>3D OrthoViewer</name>
-    <description>View 3D data in three orientations simultaneously (XY, YZ, XZ) </description>
-    <url>https://icy.bioimageanalysis.org/plugin/3d-orthoviewer/</url>
-    <inceptionYear>2020</inceptionYear>
+    <description>View 3D data in three orientations simultaneously (XY, YZ, XZ)</description>
+    <url>http://icy.fr/</url>
+    <inceptionYear>2012</inceptionYear>
 
     <scm>
         <url>https://gitlab.pasteur.fr/bia/icy/extensions/orthoviewer</url>
@@ -58,7 +58,14 @@
 
     <contributors>
         <contributor>
+            <name>Alexandre Dufour</name>
+        </contributor>
+        <contributor>
             <name>Stéphane Dallongeville</name>
+        </contributor>
+        <contributor>
+            <name>Thomas Musset</name>
+            <properties><id>Azargas</id></properties>
         </contributor>
     </contributors>
 
